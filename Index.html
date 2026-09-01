@@ -14,24 +14,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg: #0f0f0f;
-            --surface: #1a1a1a;
-            --surface2: #222;
-            --border: #2a2a2a;
-            --border-light: #333;
-            --text: #e0e0e0;
-            --text-secondary: #b0b0b0;
-            --text-muted: #707070;
-            --accent: #a0a0a0;
-            --shadow-sm: 0 2px 8px rgba(0,0,0,0.5);
-            --shadow-md: 0 8px 24px rgba(0,0,0,0.6);
-            --shadow-lg: 0 16px 40px rgba(0,0,0,0.7);
-            --filter-bg: rgba(15,15,15,0.88);
-            --glass: rgba(26,26,26,0.75);
-            --switch-bg: #3a3a3a;
-            --switch-active: #a0a0a0;
-            --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
+:root {
+    --bg: #f8fafc;
+    --surface: #ffffff;
+    --surface2: #f1f5f9;
+    --border: #e2e8f0;
+    --border-light: #cbd5e1;
+    --text: #1e293b;
+    --text-secondary: #475569;
+    --text-muted: #94a3b8;
+    --accent: #334155;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.04);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.06);
+    --shadow-lg: 0 12px 28px rgba(0,0,0,0.08);
+    --filter-bg: rgba(248,250,252,0.88);
+    --glass: rgba(255,255,255,0.75);
+    --switch-bg: #cbd5e1;
+    --switch-active: #334155;
+    --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
         /* Mejoras táctiles y scroll suave para iOS */
         * {
@@ -778,6 +779,10 @@
         ::-webkit-scrollbar { width: 6px; height: 6px; }
         ::-webkit-scrollbar-track { background: transparent; }
         ::-webkit-scrollbar-thumb { background: var(--border-light); border-radius: 10px; }
+/* Ocultar solo el grupo de tema */
+.header-actions .switch-group:last-child {
+    display: none !important;
+}
     </style>
 </head>
 <body>
